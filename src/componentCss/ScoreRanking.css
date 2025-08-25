@@ -1,0 +1,42 @@
+.Score-modal-main-div {
+  background-color: rgb(246, 243, 243);
+  
+  position: fixed;
+  width: 40%;
+  height: 80%;
+  margin-left: 30%;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.ranking-heading-main-div {
+  text-align: left;
+  
+}
+
+.ranking-heading {
+  margin-bottom: 5px;
+}
+
+.ranking-paragraph {
+  font-size: medium;
+  font-weight: 400;
+  margin-top: 0px;
+  text-align: left;
+}
+.vertical-hr {
+  border: none;
+  border-left: 1px solid #a18787;
+  height: 0px;
+  width: 50px;
+  margin: 0 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 15px;
+}

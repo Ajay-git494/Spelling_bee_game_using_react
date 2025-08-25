@@ -1,0 +1,58 @@
+.hive {
+  display: inline-block;
+  margin: 10px;
+  height: 102px;
+}
+.hive-cell {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+.hive-cell {
+  transform: translate(0, 0);
+}
+
+.cell-letter {
+  font-weight: 700;
+  font-size: 1.875em;
+  text-anchor: middle;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.cell-fill {
+  cursor: pointer;
+
+  transition: all 100ms;
+}
+.buttons-div {
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  /* justify-content: center; */
+  margin-top: 90px;
+  margin-left: 193px;
+}
+.input-blink {
+  caret-color: #ffff00;
+  padding: 3px;
+  padding-left: 25px;
+  font-size: 20px;
+  border-radius: 30px;
+  /* border: none; */
+}
+button {
+  background-color: rgb(248, 255, 255);
+  color: black;
+  border: 2px solid rgb(224, 223, 223);
+  font-size: larger;
+  border-radius: 40px;
+  padding: 10px 25px;
+}
+img {
+  width: 15px;
+  height: 15px;
+}
+.error-msg {
+  font-size: small;
+}
+

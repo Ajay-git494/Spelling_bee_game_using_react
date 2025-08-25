@@ -1,0 +1,212 @@
+.AllLetterMain_div {
+  display: flex;
+  width: 100%;
+  position: fixed;
+}
+
+.Left-div,
+.right-div {
+  flex: 0 0 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.right-div {
+  flex: 0 0 48%;
+  
+}
+.right-Inner-first-div {
+  border: 1px solid rgb(216, 213, 213);
+  border-radius: 10px;
+  height: 75vh;
+  width: 40vw;
+  
+}
+.result-words {
+  padding-bottom: 10px;
+}
+input {
+  transform: scale(1.1);
+  caret-color: #ffd700;
+}
+.table-div {
+  max-height: 65vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  padding-left: 20px;
+  /* border: 1px solid #ddd; */
+}
+
+.table-div::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table-div::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.table-div::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 170px;
+  background-color: rgb(245, 245, 245);
+  color: #070707;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 12px;
+  border: 1px solid;
+  position: absolute;
+  z-index: 1;
+  bottom: -95%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  
+}
+ 
+.progress-bar-style-div {
+  /* background-color: #888; */
+  width: 40vw;
+  margin: 5px;
+}
+.input-custom {
+  width: 500px;
+  height: 60px;
+  font-size: 30px;
+  /* border: 2px solid gray; */
+  border-radius: 12px;
+  padding: 12px 16px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: text;
+  position: relative;
+  margin: 0 auto;
+}
+
+.input-custom::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 1.5em;
+  background-color: yellow;
+  animation: blink 1s steps(2, start) infinite;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* For Chrome */
+.custom-progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.custom-progress::-webkit-progress-value {
+  background-color: #f8f005;
+  border-radius: 10px;
+}
+
+/* For Firefox */
+.custom-progress::-moz-progress-bar {
+  background-color: #f8f005;
+  border-radius: 10px;
+}
+.progress-wrapper {
+  width: 500px;
+  cursor: pointer;
+}
+
+.progress-bar-background {
+  position: relative;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #ffff00;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: black;
+  font-weight: bold;
+  transition: width 0.4s ease;
+  white-space: nowrap;
+}
+
+.score-text {
+  z-index: 1;
+}
+
+.min-score-text {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: black;
+  z-index: 2;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* Letter-component-polygon-design */
+.letter-component-element-0
+{
+  transform: translate(50%,42%);
+  /* background-color: aqua; */
+}
+.letter-component-element-1
+{
+  transform: translate(84.5%,42%);
+  /* background-color: rgb(15, 16, 16); */
+}
+.letter-component-element-2
+{
+  transform: translate(-84%,8%);
+  /* background-color: orange; */
+}
+.letter-component-element-3
+{
+  transform: translate(-185%,76%);
+  /* background-color: orange; */
+}
+.letter-component-element-4
+{
+  transform: translate(50%,9%);
+  /* background-color: orange; */
+}
+.letter-component-element-5
+{
+  transform: translate(17%,42%);
+  /* background-color: orange; */
+}
+.letter-component-element-6
+{
+  transform: translate(-17%,8%);
+  /* background-color: orange; */
+}
